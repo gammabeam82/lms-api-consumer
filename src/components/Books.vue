@@ -22,8 +22,8 @@
           </b-list-group-item>
         </b-list-group>
       </b-col>
-      <b-col>
-      </b-col>
+
+      <b-col></b-col>
     </b-row>
   </b-container>
 </template>
@@ -46,7 +46,7 @@
       }
     },
     created: function () {
-      if (!this.books) {
+      if (!this.getBooks()) {
         this.updateBooks()
       }
     },
